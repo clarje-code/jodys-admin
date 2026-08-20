@@ -27,5 +27,7 @@ COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/seed-data ./seed-data
+COPY --from=builder /app/src ./src
+COPY --from=builder /app/tsconfig.json ./tsconfig.json
 EXPOSE 3000
 CMD ["sh", "-c", "npx prisma migrate deploy && (npx tsx prisma/seed.ts &) && npm run start"]
