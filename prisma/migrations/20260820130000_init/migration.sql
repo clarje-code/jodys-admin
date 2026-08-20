@@ -8,9 +8,6 @@ Au caractère Ligne:1 : 1
  
 For more information, see: https://pris.ly/prisma-config
 
--- CreateSchema
-CREATE SCHEMA IF NOT EXISTS "public";
-
 -- CreateTable
 CREATE TABLE "AdminUser" (
     "id" TEXT NOT NULL,
