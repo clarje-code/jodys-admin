@@ -1,14 +1,4 @@
-﻿node.exe : warn The configuration property `package.json#prisma` is deprecated and will be removed in Prisma 7. Please 
-migrate to a Prisma config file (e.g., `prisma.config.ts`).
-Au caractère Ligne:1 : 1
-+ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (warn The config...ma.config.ts`).:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-For more information, see: https://pris.ly/prisma-config
-
--- CreateTable
+﻿-- CreateTable
 CREATE TABLE "AdminUser" (
     "id" TEXT NOT NULL,
     "email" TEXT NOT NULL,
@@ -128,4 +118,3 @@ ALTER TABLE "Card" ADD CONSTRAINT "Card_deckId_fkey" FOREIGN KEY ("deckId") REFE
 
 -- AddForeignKey
 ALTER TABLE "CardSlot" ADD CONSTRAINT "CardSlot_cardId_fkey" FOREIGN KEY ("cardId") REFERENCES "Card"("id") ON DELETE CASCADE ON UPDATE CASCADE;
-
