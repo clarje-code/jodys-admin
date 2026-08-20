@@ -20,14 +20,14 @@ export default async function PublishPage() {
     <AdminShell>
       <h1 className="text-3xl font-black">Publier</h1>
       <p className="mt-1 text-[#6B5B4D]">
-        Cre un snapshot immuable consomm par l&apos;app Expo.
+        CrÂe un snapshot immuable consommÂ par l&apos;app Expo.
       </p>
       <div className="mt-6 rounded-2xl border border-[#E4D5C3] bg-white p-6">
         <ul className="space-y-1 text-sm font-semibold text-[#6B5B4D]">
           <li>Decks actifs : {decks}</li>
           <li>Cartes actives : {cards}</li>
           <li>
-            Dernire version :{" "}
+            DerniÂre version :{" "}
             {latest
               ? `v${latest.version} (${latest.publishedAt.toISOString()})`
               : "aucune"}

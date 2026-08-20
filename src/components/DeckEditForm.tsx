@@ -37,13 +37,13 @@ export function DeckEditForm({ deck }: { deck: DeckFields }) {
       setMsg("Erreur sauvegarde");
       return;
     }
-    setMsg("Enregistré (pense à Publier)");
+    setMsg("EnregistrÃ© (pense Ã  Publier)");
     router.refresh();
   };
 
   return (
     <div className="rounded-2xl border border-[#E4D5C3] bg-white p-5">
-      <h2 className="text-lg font-black">Paramètres du deck</h2>
+      <h2 className="text-lg font-black">ParamÃ¨tres du deck</h2>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {(
           [
@@ -92,7 +92,7 @@ export function DeckEditForm({ deck }: { deck: DeckFields }) {
           disabled={saving}
           className="rounded-xl bg-[#1A1208] px-4 py-2 font-bold text-white disabled:opacity-50"
         >
-          {saving ? "…" : "Enregistrer"}
+          {saving ? "â€¦" : "Enregistrer"}
         </button>
         {msg ? <span className="text-sm text-[#6B5B4D]">{msg}</span> : null}
       </div>

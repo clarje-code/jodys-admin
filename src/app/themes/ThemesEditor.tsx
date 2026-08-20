@@ -22,7 +22,7 @@ export function ThemesEditor({ initial }: { initial: Theme[] }) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ themes }),
     });
-    setMsg(res.ok ? "Enregistré" : "Erreur");
+    setMsg(res.ok ? "EnregistrÃ©" : "Erreur");
   };
 
   return (

@@ -162,7 +162,7 @@ function CardEditor({
             />
             <input
               className="mt-1 w-full rounded border border-[#E4D5C3] px-2 py-1 text-sm"
-              placeholder="Définition"
+              placeholder="DÃ©finition"
               value={s.definition ?? ""}
               onChange={(e) => {
                 const slots = [...draft.slots];
@@ -213,7 +213,7 @@ function CardEditor({
         />
         <input
           className="rounded border border-[#E4D5C3] px-2 py-1 text-sm"
-          placeholder="Bonus définition"
+          placeholder="Bonus dÃ©finition"
           value={draft.bonusDefinition ?? ""}
           onChange={(e) =>
             setDraft({ ...draft, bonusDefinition: e.target.value || null })

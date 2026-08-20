@@ -21,11 +21,11 @@ async function LoginInner({
       <div className="w-full max-w-md rounded-2xl border border-[#E4D5C3] bg-white p-8 shadow-sm">
         <h1 className="text-2xl font-black">JoDy&apos;s Admin</h1>
         <p className="mt-2 text-sm text-[#6B5B4D]">
-          Connexion réservée aux administrateurs autorisés.
+          Connexion rÃ©servÃ©e aux administrateurs autorisÃ©s.
         </p>
         {sp.error ? (
           <p className="mt-4 rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700">
-            Accès refusé. Vérifie que ton email Google est dans ADMIN_EMAILS.
+            AccÃ¨s refusÃ©. VÃ©rifie que ton email Google est dans ADMIN_EMAILS.
           </p>
         ) : null}
         <form

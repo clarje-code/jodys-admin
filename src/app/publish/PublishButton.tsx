@@ -16,7 +16,7 @@ export function PublishButton({ currentVersion }: { currentVersion: number }) {
       return;
     }
     const data = (await res.json()) as { version: number };
-    setMsg(`Publié v${data.version}`);
+    setMsg(`PubliÃ© v${data.version}`);
     window.location.reload();
   };
 
@@ -28,7 +28,7 @@ export function PublishButton({ currentVersion }: { currentVersion: number }) {
         onClick={publish}
         className="rounded-xl bg-[#C2185B] px-5 py-3 font-bold text-white disabled:opacity-50"
       >
-        {busy ? "Publication…" : `Publier (actuel v${currentVersion})`}
+        {busy ? "Publicationâ€¦" : `Publier (actuel v${currentVersion})`}
       </button>
       {msg ? <span className="text-sm font-semibold">{msg}</span> : null}
     </div>

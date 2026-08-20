@@ -16,7 +16,7 @@ export function CopyEditor({
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ entries: rows }),
     });
-    setMsg(res.ok ? "Enregistré" : "Erreur");
+    setMsg(res.ok ? "EnregistrÃ©" : "Erreur");
   };
 
   return (
@@ -48,7 +48,7 @@ export function CopyEditor({
         onClick={() => setRows([...rows, { key: "nouvelle_cle", value: "" }])}
         className="text-sm font-bold text-[#C2185B]"
       >
-        + Ajouter une clé
+        + Ajouter une clÃ©
       </button>
       <div className="flex items-center gap-3">
         <button

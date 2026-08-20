@@ -5,7 +5,7 @@ const links = [
   { href: "/", label: "Dashboard" },
   { href: "/decks", label: "Decks" },
   { href: "/copy", label: "Textes" },
-  { href: "/themes", label: "Thèmes" },
+  { href: "/themes", label: "ThÃ¨mes" },
   { href: "/publish", label: "Publier" },
 ];
 
@@ -46,7 +46,7 @@ export async function AdminShell({ children }: { children: React.ReactNode }) {
                 type="submit"
                 className="rounded-lg border border-[#D9C7B0] px-3 py-1.5 font-semibold hover:bg-[#FFF8F0]"
               >
-                Déconnexion
+                DÃ©connexion
               </button>
             </form>
           </div>

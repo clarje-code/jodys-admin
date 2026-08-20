@@ -34,11 +34,11 @@ export default async function DecksPage() {
               </div>
               <div className="text-sm text-[#6B5B4D]">{d.tagline}</div>
               <div className="mt-2 text-xs font-semibold text-[#6B5B4D]">
-                Mime {d.mimeSeconds}s  Vol {d.stealSeconds}s {" "}
+                Mime {d.mimeSeconds}s Â Vol {d.stealSeconds}s Â{" "}
                 {d._count.cards} cartes
               </div>
             </div>
-            <span className="font-bold text-[#C2185B]">diter ?</span>
+            <span className="font-bold text-[#C2185B]">Âditer ?</span>
           </Link>
         ))}
       </div>
