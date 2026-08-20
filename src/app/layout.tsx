@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   title: "JoDy's — Mime ivoirien entre potes",
   description:
     "WÊTAI, KÉCLÉ, EXPRESSION : le jeu de mime ivoirien à télécharger. Joue offline avec tes amis.",
+  openGraph: {
+    title: "JoDy's — Mime ivoirien entre potes",
+    description:
+      "WÊTAI, KÉCLÉ, EXPRESSION — mimes, éclats de rire et potes autour du téléphone.",
+    images: [{ url: "/brand/cover-wetai.png" }],
+  },
 };
 
 export default function RootLayout({
