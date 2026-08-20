@@ -16,6 +16,7 @@ RUN npm run build
 
 FROM node:22-alpine AS runner
 WORKDIR /app
+RUN apk add --no-cache wget
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3000
@@ -27,4 +28,4 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/seed-data ./seed-data
 EXPOSE 3000
-CMD ["sh", "-c", "npx prisma migrate deploy && npx tsx prisma/seed.ts && npm run start"]
+CMD ["sh", "-c", "npx prisma migrate deploy && (npx tsx prisma/seed.ts &) && npm run start"]
