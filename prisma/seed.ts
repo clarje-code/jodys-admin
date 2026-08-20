@@ -20,8 +20,8 @@ type SeedCard = {
 const DECK_META = [
   {
     id: "wetai",
-    name: "WùTAI",
-    tagline: "1 minute pour mimer les mots gùniaux",
+    name: "W\u00caTAI",
+    tagline: "1 minute pour mimer les mots g\u00e9niaux",
     primary: "#C2185B",
     secondary: "#F48FB1",
     accent: "#FFFFFF",
@@ -34,8 +34,8 @@ const DECK_META = [
   },
   {
     id: "kecle",
-    name: "KùCLù",
-    tagline: "1 minute pour mimer les mots ù l'ivoirienne",
+    name: "K\u00c9CL\u00c9",
+    tagline: "1 minute pour mimer les mots \u00e0 l'ivoirienne",
     primary: "#5C3A1E",
     secondary: "#A67C52",
     accent: "#F5E6C8",
@@ -49,7 +49,7 @@ const DECK_META = [
   {
     id: "expression",
     name: "EXPRESSION",
-    tagline: "1 minute pour mimer les expressions ù l'ivoirienne",
+    tagline: "1 minute pour mimer les expressions \u00e0 l'ivoirienne",
     primary: "#00695C",
     secondary: "#26A69A",
     accent: "#FFFFFF",
@@ -66,7 +66,7 @@ const TEAM_THEMES = [
   {
     id: "soleil",
     label: "Soleil",
-    defaultName: "ùquipe Soleil",
+    defaultName: "\u00c9quipe Soleil",
     primary: "#E65100",
     secondary: "#FFB74D",
     picto: "sun",
@@ -74,8 +74,8 @@ const TEAM_THEMES = [
   },
   {
     id: "elephants",
-    label: "ùlùphants",
-    defaultName: "ùquipe ùlùphants",
+    label: "\u00c9l\u00e9phants",
+    defaultName: "\u00c9quipe \u00c9l\u00e9phants",
     primary: "#5C3A1E",
     secondary: "#A67C52",
     picto: "elephant",
@@ -84,7 +84,7 @@ const TEAM_THEMES = [
   {
     id: "cacao",
     label: "Cacao",
-    defaultName: "ùquipe Cacao",
+    defaultName: "\u00c9quipe Cacao",
     primary: "#4E342E",
     secondary: "#8D6E63",
     picto: "food",
@@ -93,7 +93,7 @@ const TEAM_THEMES = [
   {
     id: "lagune",
     label: "Lagune",
-    defaultName: "ùquipe Lagune",
+    defaultName: "\u00c9quipe Lagune",
     primary: "#0277BD",
     secondary: "#4FC3F7",
     picto: "fish",
@@ -102,7 +102,7 @@ const TEAM_THEMES = [
   {
     id: "goli",
     label: "Goli",
-    defaultName: "ùquipe Goli",
+    defaultName: "\u00c9quipe Goli",
     primary: "#6A1B9A",
     secondary: "#CE93D8",
     picto: "crown",
@@ -110,8 +110,8 @@ const TEAM_THEMES = [
   },
   {
     id: "attieke",
-    label: "Attiùkù",
-    defaultName: "ùquipe Attiùkù",
+    label: "Atti\u00e9k\u00e9",
+    defaultName: "\u00c9quipe Atti\u00e9k\u00e9",
     primary: "#F9A825",
     secondary: "#FFF59D",
     picto: "pot",
@@ -120,11 +120,11 @@ const TEAM_THEMES = [
 ];
 
 const COPY_SEED: Record<string, string> = {
-  startTimer: "Dùmarrer le timer",
-  found: "Trouvù !",
+  startTimer: "D\u00e9marrer le timer",
+  found: "Trouv\u00e9 !",
   quit: "Quitter",
   launch: "Lancer la partie",
-  ready: "Je suis prùt",
+  ready: "Je suis pr\u00eat",
   bannerSteal: "VOL !",
   bannerBonus: "BONUS DOUBLE",
 };
