@@ -2,22 +2,22 @@ import Link from "next/link";
 import { auth, signOut } from "@/lib/auth";
 
 const links = [
-  { href: "/", label: "Dashboard" },
-  { href: "/decks", label: "Decks" },
-  { href: "/copy", label: "Textes" },
-  { href: "/themes", label: "Thèmes" },
-  { href: "/publish", label: "Publier" },
+  { href: "/admin", label: "Dashboard" },
+  { href: "/admin/decks", label: "Decks" },
+  { href: "/admin/copy", label: "Textes" },
+  { href: "/admin/themes", label: "Thèmes" },
+  { href: "/admin/publish", label: "Publier" },
 ];
 
 export async function AdminShell({ children }: { children: React.ReactNode }) {
   const session = await auth();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#FFF8F0] text-[#1A1208]">
       <header className="border-b border-[#E4D5C3] bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
           <div className="flex items-center gap-6">
-            <Link href="/" className="text-lg font-black tracking-tight">
+            <Link href="/admin" className="text-lg font-black tracking-tight">
               JoDy&apos;s <span className="text-[#D4A017]">Admin</span>
             </Link>
             <nav className="hidden gap-3 md:flex">
@@ -33,13 +33,16 @@ export async function AdminShell({ children }: { children: React.ReactNode }) {
             </nav>
           </div>
           <div className="flex items-center gap-3 text-sm">
+            <Link href="/" className="text-[#6B5B4D] hover:text-[#1A1208]">
+              Site
+            </Link>
             <span className="hidden text-[#6B5B4D] sm:inline">
               {session?.user?.email}
             </span>
             <form
               action={async () => {
                 "use server";
-                await signOut({ redirectTo: "/login" });
+                await signOut({ redirectTo: "/admin/login" });
               }}
             >
               <button

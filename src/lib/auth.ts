@@ -18,15 +18,16 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   ],
   trustHost: true,
   pages: {
-    signIn: "/login",
-    error: "/login",
+    signIn: "/admin/login",
+    error: "/admin/login",
   },
   callbacks: {
     async signIn({ user, profile }) {
-      const email = (user.email ?? profile?.email ?? "").toLowerCase();
+      const email = (user.email ?? profile?.email ?? "").toLowerCase().trim();
       if (!email) return false;
       const allowed = adminEmails();
       if (allowed.length > 0 && !allowed.includes(email)) {
+        console.warn(`[auth] refused email not in ADMIN_EMAILS: ${email}`);
         return false;
       }
       const googleId =
@@ -34,22 +35,27 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           ? String((profile as { sub?: string }).sub ?? "")
           : null;
 
-      await prisma.adminUser.upsert({
-        where: { email },
-        create: {
-          email,
-          name: user.name ?? null,
-          image: user.image ?? null,
-          googleId: googleId || null,
-          lastLoginAt: new Date(),
-        },
-        update: {
-          name: user.name ?? null,
-          image: user.image ?? null,
-          googleId: googleId || undefined,
-          lastLoginAt: new Date(),
-        },
-      });
+      try {
+        await prisma.adminUser.upsert({
+          where: { email },
+          create: {
+            email,
+            name: user.name ?? null,
+            image: user.image ?? null,
+            googleId: googleId || null,
+            lastLoginAt: new Date(),
+          },
+          update: {
+            name: user.name ?? null,
+            image: user.image ?? null,
+            googleId: googleId || undefined,
+            lastLoginAt: new Date(),
+          },
+        });
+      } catch (err) {
+        console.error("[auth] adminUser upsert failed", err);
+        // Allow login even if audit upsert fails — don't block admins
+      }
       return true;
     },
     async session({ session }) {
@@ -63,7 +69,7 @@ export async function requireAdmin() {
   if (!session?.user?.email) {
     return null;
   }
-  const email = session.user.email.toLowerCase();
+  const email = session.user.email.toLowerCase().trim();
   const allowed = adminEmails();
   if (allowed.length > 0 && !allowed.includes(email)) {
     return null;

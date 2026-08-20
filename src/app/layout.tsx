@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit, Syne } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
+  variable: "--font-body",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const syne = Syne({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["600", "700", "800"],
 });
 
 export const metadata: Metadata = {
-  title: "JoDy's Admin",
-  description: "Back-office cartes, textes et thèmes JoDy's",
+  title: "JoDy's — Mime ivoirien entre potes",
+  description:
+    "WÊTAI, KÉCLÉ, EXPRESSION : le jeu de mime ivoirien à télécharger. Joue offline avec tes amis.",
 };
 
 export default function RootLayout({
@@ -24,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#FFF8F0] text-[#1A1208]`}>
+      <body
+        className={`${outfit.variable} ${syne.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
