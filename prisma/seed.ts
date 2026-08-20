@@ -215,6 +215,8 @@ async function main() {
   if (!existing) {
     const { buildCatalogPayload } = await import("../src/lib/catalog");
     const payload = await buildCatalogPayload(prisma);
+    payload.version = 1;
+    payload.publishedAt = new Date().toISOString();
     await prisma.catalogPublish.create({
       data: {
         version: 1,
