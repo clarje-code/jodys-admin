@@ -14,13 +14,13 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "JoDy's — Mime ivoirien entre potes",
+  title: "JoDy's \u2014 Mime ivoirien entre potes",
   description:
-    "WÊTAI, KÉCLÉ, EXPRESSION : le jeu de mime ivoirien à télécharger. Joue offline avec tes amis.",
+    "W\u00caTAI, K\u00c9CL\u00c9, EXPRESSION : le jeu de mime ivoirien \u00e0 t\u00e9l\u00e9charger. Joue offline avec tes amis.",
   openGraph: {
-    title: "JoDy's — Mime ivoirien entre potes",
+    title: "JoDy's \u2014 Mime ivoirien entre potes",
     description:
-      "WÊTAI, KÉCLÉ, EXPRESSION — mimes, éclats de rire et potes autour du téléphone.",
+      "W\u00caTAI, K\u00c9CL\u00c9, EXPRESSION \u2014 mimes, \u00e9clats de rire et potes autour du t\u00e9l\u00e9phone.",
     images: [{ url: "/brand/cover-wetai.png" }],
   },
 };
@@ -32,9 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body
-        className={`${outfit.variable} ${syne.variable} antialiased`}
-      >
+      <body className={`${outfit.variable} ${syne.variable} antialiased`}>
         {children}
       </body>
     </html>

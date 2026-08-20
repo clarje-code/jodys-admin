@@ -4,9 +4,21 @@ import { useEffect, useState } from "react";
 
 const BANNERS = ["VOL !", "BONUS DOUBLE", "TOUR SUIVANT", "1 MINUTE"] as const;
 const COVERS = [
-  { src: "/brand/cover-wetai.png", alt: "Pochette WÊTAI", tone: "#C2185B" },
-  { src: "/brand/cover-kecle.png", alt: "Pochette KÉCLÉ", tone: "#A67C52" },
-  { src: "/brand/cover-expression.png", alt: "Pochette EXPRESSION", tone: "#00897B" },
+  {
+    src: "/brand/cover-wetai.png",
+    label: "W\u00caTAI",
+    tone: "#C2185B",
+  },
+  {
+    src: "/brand/cover-kecle.png",
+    label: "K\u00c9CL\u00c9",
+    tone: "#A67C52",
+  },
+  {
+    src: "/brand/cover-expression.png",
+    label: "EXPRESSION",
+    tone: "#00897B",
+  },
 ] as const;
 
 export function StageBanner() {
@@ -71,7 +83,7 @@ export function PhoneShowcase() {
         ))}
         <div className="phone-chrome">
           <span>JoDy&apos;s</span>
-          <em style={{ color: cover.tone }}>{cover.alt.replace("Pochette ", "")}</em>
+          <em style={{ color: cover.tone }}>{cover.label}</em>
         </div>
       </div>
       <div className="phone-shadow" />
