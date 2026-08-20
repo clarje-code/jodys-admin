@@ -48,3 +48,6 @@ next-env.d.ts
 .claude/
 .windsurf/
 skills-lock.json
+
+# APK served via GitHub Release (not in Docker image)
+/public/downloads/*.apk
