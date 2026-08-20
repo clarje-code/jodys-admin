@@ -1,0 +1,93 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model AdminUser {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  googleId      String?   @unique
+  image         String?
+  lastLoginAt   DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Deck {
+  id        String   @id
+  name      String
+  tagline   String
+  primary   String
+  secondary String
+  accent    String
+  ray       String
+  soft      String
+  mimeSeconds       Int @default(30)
+  stealSeconds      Int @default(15)
+  bonusStealSeconds Int @default(10)
+  sortOrder Int      @default(0)
+  active    Boolean  @default(true)
+  cards     Card[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Card {
+  id              String     @id @default(cuid())
+  deckId          String
+  deck            Deck       @relation(fields: [deckId], references: [id], onDelete: Cascade)
+  externalId      String
+  level           Int        @default(1)
+  bonusLabel      String?
+  bonusDefinition String?
+  sortOrder       Int        @default(0)
+  active          Boolean    @default(true)
+  slots           CardSlot[]
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+
+  @@unique([deckId, externalId])
+  @@index([deckId])
+}
+
+model CardSlot {
+  id         String  @id @default(cuid())
+  cardId     String
+  card       Card    @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  index      Int
+  label      String
+  definition String?
+  color      String
+  points     Int
+
+  @@unique([cardId, index])
+}
+
+model CopyEntry {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+}
+
+model TeamTheme {
+  id          String @id
+  label       String
+  defaultName String
+  primary     String
+  secondary   String
+  picto       String
+  sortOrder   Int    @default(0)
+}
+
+model CatalogPublish {
+  id               Int      @id @default(autoincrement())
+  version          Int      @unique
+  payload          Json
+  publishedAt      DateTime @default(now())
+  publishedByEmail String?
+}

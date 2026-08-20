@@ -1,0 +1,325 @@
+[
+  {
+    "id": "kecle-001",
+    "deck": "kecle",
+    "level": 2,
+    "slots": [
+      {
+        "label": "Papillon",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Zouglou",
+        "definition": "Concept de danse / musique ivoirienne",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Gaou",
+        "definition": "Personne naïve / facile à tromper",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Gnata",
+      "definition": "Quelqu'un de trop lent / dépassé"
+    }
+  },
+  {
+    "id": "kecle-002",
+    "deck": "kecle",
+    "level": 2,
+    "slots": [
+      {
+        "label": "Yafoye",
+        "definition": "D'accord",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Krika",
+        "definition": "1 000 francs CFA",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Enjailler",
+        "definition": "S'amuser / kiffer",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "kecle-003",
+    "deck": "kecle",
+    "level": 3,
+    "slots": [
+      {
+        "label": "Bôrô",
+        "definition": "Travail / boulot",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Go",
+        "definition": "Fille / copine",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Mousso",
+        "definition": "Femme",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Gban",
+      "definition": "Beaucoup / trop"
+    }
+  },
+  {
+    "id": "kecle-004",
+    "deck": "kecle",
+    "level": 2,
+    "slots": [
+      {
+        "label": "Choco",
+        "definition": "Ami proche",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Bra",
+        "definition": "Frère / pote",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Dja",
+        "definition": "Manger",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "kecle-005",
+    "deck": "kecle",
+    "level": 3,
+    "slots": [
+      {
+        "label": "Faroter",
+        "definition": "Frimer / se vanter",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Chap-chap",
+        "definition": "Vite / rapidement",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Kpata",
+        "definition": "Beau / stylé",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Gbôrou",
+      "definition": "Se bagarrer"
+    }
+  },
+  {
+    "id": "kecle-006",
+    "deck": "kecle",
+    "level": 2,
+    "slots": [
+      {
+        "label": "Môgô",
+        "definition": "Garçon / mec",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Tchaïn",
+        "definition": "Argent",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Bôrôsseur",
+        "definition": "Travailleur / quelqu'un qui se démène",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "kecle-007",
+    "deck": "kecle",
+    "level": 3,
+    "slots": [
+      {
+        "label": "S'enjailler",
+        "definition": "Prendre du plaisir",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Dégager",
+        "definition": "Partir / s'en aller",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Faut pas foul",
+        "definition": "Il ne faut pas exagérer",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "On est ensemble",
+      "definition": "On est solidaires / d'accord"
+    }
+  },
+  {
+    "id": "kecle-008",
+    "deck": "kecle",
+    "level": 2,
+    "slots": [
+      {
+        "label": "Atchô",
+        "definition": "Attention / regarde",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Yako",
+        "definition": "Désolé / courage",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Côcô",
+        "definition": "Blague / raconter des histoires",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "kecle-009",
+    "deck": "kecle",
+    "level": 3,
+    "slots": [
+      {
+        "label": "Pilikodrome",
+        "definition": "Endroit où l'on vend le pilikosson / fritures",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Djassa",
+        "definition": "Quartier populaire d'Abidjan",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Yopougon",
+        "definition": "Commune d'Abidjan",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Plateau",
+      "definition": "Quartier des affaires d'Abidjan"
+    }
+  },
+  {
+    "id": "kecle-010",
+    "deck": "kecle",
+    "level": 2,
+    "slots": [
+      {
+        "label": "Il est chaud",
+        "definition": "C'est difficile / intense",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "C'est clair",
+        "definition": "C'est évident",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "On dit quoi ?",
+        "definition": "Salut / ça va ?",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "kecle-011",
+    "deck": "kecle",
+    "level": 3,
+    "slots": [
+      {
+        "label": "Bail",
+        "definition": "Truc / affaire",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Lô",
+        "definition": "Mensonge / blague",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Gbahié",
+        "definition": "Gros / imposant",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Soutra",
+      "definition": "Aide / soutien"
+    }
+  },
+  {
+    "id": "kecle-012",
+    "deck": "kecle",
+    "level": 2,
+    "slots": [
+      {
+        "label": "Drogba",
+        "definition": "Légende du football ivoirien",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Éléphants",
+        "definition": "Équipe nationale de Côte d'Ivoire",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Abidjanais",
+        "definition": "Habitant d'Abidjan",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "wetai-001",
+    "deck": "wetai",
+    "level": 1,
+    "slots": [
+      {
+        "label": "Crapaud",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Voiture",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Garba",
+        "definition": "Attiéké avec poisson thon",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Coupé-décalé",
+      "definition": "Danse / courant musical ivoirien"
+    }
+  },
+  {
+    "id": "wetai-002",
+    "deck": "wetai",
+    "level": 1,
+    "slots": [
+      {
+        "label": "Banane",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Football",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Allocodrome",
+        "definition": "Lieu où l'on vend l'alloco",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "wetai-003",
+    "deck": "wetai",
+    "level": 1,
+    "slots": [
+      {
+        "label": "Pluie",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Téléphone",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Alloco",
+        "definition": "Banane plantain frite",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Kedjenou",
+      "definition": "Plat de poulet mijoté en canari"
+    }
+  },
+  {
+    "id": "wetai-004",
+    "deck": "wetai",
+    "level": 2,
+    "slots": [
+      {
+        "label": "École",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Moto",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Gbaka",
+        "definition": "Minibus de transport urbain",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "wetai-005",
+    "deck": "wetai",
+    "level": 2,
+    "slots": [
+      {
+        "label": "Chien",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Danse",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Attiéké",
+        "definition": "Semoule de manioc",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Foutou",
+      "definition": "Pâte de banane / igname pilée"
+    }
+  },
+  {
+    "id": "wetai-006",
+    "deck": "wetai",
+    "level": 2,
+    "slots": [
+      {
+        "label": "Soleil",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Marché",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Wôrô-wôrô",
+        "definition": "Taxi collectif",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "wetai-007",
+    "deck": "wetai",
+    "level": 3,
+    "slots": [
+      {
+        "label": "Poisson",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Tambour",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Maquis",
+        "definition": "Restaurant populaire en plein air",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Bangui",
+      "definition": "Vin de palme"
+    }
+  },
+  {
+    "id": "wetai-008",
+    "deck": "wetai",
+    "level": 3,
+    "slots": [
+      {
+        "label": "Livre",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Plage",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Cabine",
+        "definition": "Petite boutique / kiosque",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "wetai-009",
+    "deck": "wetai",
+    "level": 1,
+    "slots": [
+      {
+        "label": "Chat",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Cuisine",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Sauce graine",
+        "definition": "Sauce à base de noix de palme",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Placali",
+      "definition": "Pâte de manioc fermenté"
+    }
+  },
+  {
+    "id": "wetai-010",
+    "deck": "wetai",
+    "level": 2,
+    "slots": [
+      {
+        "label": "Avion",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Footballer",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Djêdjê",
+        "definition": "Bébé / petit enfant",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "wetai-011",
+    "deck": "wetai",
+    "level": 3,
+    "slots": [
+      {
+        "label": "Vélo",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Église",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Gombô",
+        "definition": "Légume mucilagineux (gombo)",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Alloco-poisson",
+      "definition": "Combo alloco et poisson frit"
+    }
+  },
+  {
+    "id": "wetai-012",
+    "deck": "wetai",
+    "level": 1,
+    "slots": [
+      {
+        "label": "Maison",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Radio",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Tô",
+        "definition": "Pâte de mil / maïs",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  }
+]

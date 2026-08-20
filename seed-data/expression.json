@@ -1,0 +1,290 @@
+[
+  {
+    "id": "expr-001",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Tomber dans le panneau",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Monter au 7ème ciel",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Premier gaou n'est pas gaou",
+        "definition": "Ce n'est pas la première erreur qui compte, c'est la récidive",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "C'est deuxième gaou qui est gnata",
+      "definition": "C'est la deuxième fois qu'on se fait avoir qui est grave"
+    }
+  },
+  {
+    "id": "expr-002",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Avoir les yeux plus gros que le ventre",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Mettre la charrue avant les bœufs",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "On est ensemble",
+        "definition": "Solidarité / complicité",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "expr-003",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Poser un lapin",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Avoir un poil dans la main",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Faut pas foul hein",
+        "definition": "N'exagère pas",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "C'est chaud là",
+      "definition": "La situation est tendue"
+    }
+  },
+  {
+    "id": "expr-004",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Donner sa langue au chat",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Appeler un chat un chat",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Il a mangé le gaou",
+        "definition": "Il s'est fait avoir",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "expr-005",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Se mettre le doigt dans l'œil",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Casser du sucre sur le dos",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Ça va tchatcher",
+        "definition": "Ça va bien se passer / être animé",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Y a pas match",
+      "definition": "Ce n'est même pas comparable"
+    }
+  },
+  {
+    "id": "expr-006",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Avoir le café qui fume",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Retourner sa veste",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Il est dans son bail",
+        "definition": "Il est dans son élément",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "expr-007",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Jeter l'éponge",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Couper l'herbe sous le pied",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "On bouge pas",
+        "definition": "On reste solide / on ne change pas",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "C'est du gâteau",
+      "definition": "C'est facile"
+    }
+  },
+  {
+    "id": "expr-008",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Prendre ses jambes à son cou",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Avoir un cœur d'artichaut",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Il farote trop",
+        "definition": "Il frime trop",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "expr-009",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Tomber des nues",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Être sur un petit nuage",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Yako mon frère",
+        "definition": "Courage / désolé mon frère",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "C'est clair comme de l'eau de roche",
+      "definition": "C'est évident"
+    }
+  },
+  {
+    "id": "expr-010",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Raconter des salades",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Chercher midi à quatorze heures",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "Il fait le gnata",
+        "definition": "Il fait l'innocent / le lent",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "id": "expr-011",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Avoir la tête dans les nuages",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Mettre de l'huile sur le feu",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "On s'enjaille fort",
+        "definition": "On s'amuse beaucoup",
+        "color": "green",
+        "points": 3
+      }
+    ],
+    "bonus": {
+      "label": "Le bail est posé",
+      "definition": "C'est clair / c'est réglé"
+    }
+  },
+  {
+    "id": "expr-012",
+    "deck": "expression",
+    "slots": [
+      {
+        "label": "Voir midi à sa porte",
+        "color": "black",
+        "points": 1
+      },
+      {
+        "label": "Avoir d'autres chats à fouetter",
+        "color": "orange",
+        "points": 1
+      },
+      {
+        "label": "C'est pas le gaou",
+        "definition": "Ce n'est pas celui qu'on croit naïf",
+        "color": "green",
+        "points": 3
+      }
+    ]
+  }
+]
