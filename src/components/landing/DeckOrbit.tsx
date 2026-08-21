@@ -59,13 +59,16 @@ export function DeckOrbit({ decks }: Props) {
               onClick={() => go(index)}
               aria-label={deck.name}
               aria-current={isActive ? "true" : undefined}
-              style={
-                isActive
-                  ? { borderColor: deck.tone, boxShadow: `0 16px 32px ${deck.tone}55` }
-                  : undefined
-              }
+              style={{
+                background: deck.tone,
+                ...(isActive
+                  ? {
+                      borderColor: deck.tone,
+                      boxShadow: `0 16px 32px ${deck.tone}55`,
+                    }
+                  : null),
+              }}
             >
-              <span className="deck-orbit-notch" aria-hidden />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={deck.cover} alt="" draggable={false} />
             </button>

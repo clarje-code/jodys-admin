@@ -39,6 +39,7 @@ const DECKS = [
     tag: "Mots g\u00e9niaux",
     text: "Une minute pour mimer les mots qui font monter la salle.",
     cover: "/brand/cover-wetai.png",
+    orbitCover: "/brand/cover-wetai-pack.png",
     tone: "#C2185B",
     soft: "rgba(194,24,91,0.45)",
   },
@@ -48,6 +49,7 @@ const DECKS = [
     tag: "Parler ivoirien",
     text: "Le nouchi en mime \u2014 qui comprend, qui rit, qui gagne.",
     cover: "/brand/cover-kecle.png",
+    orbitCover: "/brand/cover-kecle-pack.png",
     tone: "#D4A017",
     soft: "rgba(166,124,82,0.5)",
   },
@@ -57,6 +59,7 @@ const DECKS = [
     tag: "Expressions locales",
     text: "Proverbes et formules du pays, rires garantis.",
     cover: "/brand/cover-expression.png",
+    orbitCover: "/brand/cover-expression-pack.png",
     tone: "#26A69A",
     soft: "rgba(0,137,123,0.45)",
   },
@@ -135,7 +138,15 @@ export function LandingView() {
 
           <div className="hero-visual">
             <div className="hero-orbit-mobile">
-              <DeckOrbit decks={DECKS} />
+              <DeckOrbit
+                decks={DECKS.map((d) => ({
+                  id: d.id,
+                  name: d.name,
+                  tag: d.tag,
+                  cover: d.orbitCover,
+                  tone: d.tone,
+                }))}
+              />
             </div>
             <div className="hero-phone-desktop">
               <PhoneShowcase />
