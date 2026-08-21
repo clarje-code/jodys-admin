@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import Link from "next/link";
 import { getDownloadLinks } from "@/lib/download";
+import { DeckOrbit } from "@/components/landing/DeckOrbit";
 import {
   MascotFloat,
   PhoneShowcase,
@@ -133,7 +134,12 @@ export function LandingView() {
           </div>
 
           <div className="hero-visual">
-            <PhoneShowcase />
+            <div className="hero-orbit-mobile">
+              <DeckOrbit decks={DECKS} />
+            </div>
+            <div className="hero-phone-desktop">
+              <PhoneShowcase />
+            </div>
             <div className="mascot-wrap">
               <MascotFloat />
             </div>
