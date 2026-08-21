@@ -67,11 +67,10 @@ export function DeckOrbit({ decks }: Props) {
             style={
               index === active
                 ? {
-                    background: deck.tone,
                     borderColor: deck.tone,
-                    boxShadow: `0 22px 44px rgba(0,0,0,0.5), 0 0 0 2px ${deck.tone}`,
+                    boxShadow: `0 22px 44px rgba(0,0,0,0.5), 0 0 0 2px ${deck.tone}88`,
                   }
-                : { background: deck.tone }
+                : undefined
             }
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}

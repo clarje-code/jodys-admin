@@ -431,13 +431,14 @@ a {
   left: 50%;
   top: 4%;
   width: min(58%, 210px);
-  aspect-ratio: 3 / 4;
+  /* même ratio que les covers pack (~0.78) → pas de bande colorée autour */
+  aspect-ratio: 19 / 24;
   margin: 0;
   padding: 0;
   border: 2.5px solid rgba(255, 244, 232, 0.22);
   border-radius: 1.2rem;
   overflow: hidden;
-  background: #0a0705;
+  background: #111;
   cursor: pointer;
   box-shadow: 0 18px 36px rgba(0, 0, 0, 0.45);
   transition:
@@ -453,8 +454,8 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  /* contain = boîte entière visible pour les 3 (comme EXPRESSION sur la vidéo) */
-  object-fit: contain;
+  /* cover + ratio pack = boîte plein cadre pour les 3, comme EXPRESSION */
+  object-fit: cover;
   object-position: center center;
   pointer-events: none;
 }
