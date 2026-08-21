@@ -136,15 +136,12 @@ export function LandingView() {
           <div className="hero-visual">
             <div className="hero-orbit-mobile">
               <DeckOrbit decks={DECKS} />
-              <div className="mascot-wrap mascot-wrap--orbit">
-                <MascotFloat />
-              </div>
             </div>
             <div className="hero-phone-desktop">
               <PhoneShowcase />
-              <div className="mascot-wrap">
-                <MascotFloat />
-              </div>
+            </div>
+            <div className="mascot-wrap">
+              <MascotFloat />
             </div>
           </div>
         </section>
