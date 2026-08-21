@@ -183,7 +183,7 @@ a {
 
   .hero-visual {
     order: -1;
-    max-width: min(100%, 360px);
+    max-width: min(100%, 400px);
     margin: 0 auto;
     min-height: 0;
   }
@@ -374,11 +374,13 @@ a {
 .hero-orbit-mobile {
   display: none;
   width: 100%;
+  position: relative;
 }
 
 .hero-phone-desktop {
   display: block;
   width: 100%;
+  position: relative;
 }
 
 @media (max-width: 900px) {
@@ -399,19 +401,20 @@ a {
 .deck-orbit {
   position: relative;
   width: 100%;
-  padding: 0.5rem 0 0.25rem;
+  padding: 0.25rem 0 0.25rem;
   z-index: 1;
+  overflow: visible;
 }
 
 .deck-orbit-glow {
   position: absolute;
-  left: 18%;
-  right: 18%;
-  top: 12%;
-  height: 55%;
+  left: 10%;
+  right: 10%;
+  top: 8%;
+  height: 58%;
   border-radius: 50%;
   filter: blur(36px);
-  opacity: 0.4;
+  opacity: 0.42;
   transition: background 0.5s ease;
   z-index: 0;
   pointer-events: none;
@@ -421,31 +424,47 @@ a {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 260px;
-  perspective: 900px;
+  height: 300px;
+  perspective: 1000px;
   transform-style: preserve-3d;
+  overflow: visible;
 }
 
 .deck-orbit-card {
   position: absolute;
   left: 50%;
-  top: 8%;
-  width: min(46%, 168px);
-  aspect-ratio: 2 / 3;
+  top: 4%;
+  width: min(58%, 200px);
+  aspect-ratio: 9 / 17;
   margin: 0;
   padding: 0;
-  border: 2px solid rgba(255, 244, 232, 0.18);
-  border-radius: 1rem;
+  border: 3px solid rgba(255, 244, 232, 0.22);
+  border-radius: 1.35rem;
   overflow: hidden;
   background: #0a0705;
   cursor: pointer;
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.45);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06);
   transition:
-    transform 0.7s cubic-bezier(0.4, 1.4, 0.3, 1),
-    opacity 0.5s ease,
+    transform 0.65s cubic-bezier(0.4, 1.2, 0.3, 1),
+    opacity 0.45s ease,
     z-index 0s linear 0.05s,
     border-color 0.3s ease;
   -webkit-tap-highlight-color: transparent;
+}
+
+.deck-orbit-card::before {
+  content: "";
+  position: absolute;
+  top: 0.45rem;
+  left: 50%;
+  z-index: 2;
+  width: 36%;
+  height: 0.55rem;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: #0a0705;
 }
 
 .deck-orbit-card img {
@@ -459,50 +478,54 @@ a {
 .deck-orbit-card.is-active {
   z-index: 3;
   opacity: 1;
-  border-color: rgba(255, 244, 232, 0.35);
-  transform: translate3d(-50%, 12px, 0) scale(1) rotateY(0deg);
+  border-color: rgba(255, 244, 232, 0.4);
+  transform: translate3d(-50%, 8px, 0) scale(1) rotateY(0deg);
 }
 
 .deck-orbit-card.is-left {
   z-index: 2;
-  opacity: 0.92;
-  transform: translate3d(calc(-50% - 72px), 0, -40px) scale(0.78) rotateY(18deg);
+  opacity: 1;
+  transform: translate3d(calc(-50% - 88px), 18px, -20px) scale(0.88) rotateY(12deg);
 }
 
 .deck-orbit-card.is-right {
   z-index: 2;
-  opacity: 0.92;
-  transform: translate3d(calc(-50% + 72px), 0, -40px) scale(0.78) rotateY(-18deg);
+  opacity: 1;
+  transform: translate3d(calc(-50% + 88px), 18px, -20px) scale(0.88) rotateY(-12deg);
 }
 
 .deck-orbit-card.is-hidden {
   z-index: 1;
   opacity: 0;
   pointer-events: none;
-  transform: translate3d(-50%, 20px, -80px) scale(0.6);
+  transform: translate3d(-50%, 28px, -60px) scale(0.7);
 }
 
 .deck-orbit-meta {
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-top: 0.35rem;
+  margin-top: 0.5rem;
+  min-height: 3.1rem;
 }
 
 .deck-orbit-name {
   margin: 0;
   font-family: var(--font-display), sans-serif;
   font-weight: 800;
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   letter-spacing: -0.02em;
   transition: color 0.4s ease;
 }
 
 .deck-orbit-tag {
-  margin: 0.2rem 0 0;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  margin: 0.25rem 0 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -511,7 +534,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 0.55rem;
-  margin-top: 0.75rem;
+  margin-top: 0.65rem;
   position: relative;
   z-index: 2;
 }
@@ -538,7 +561,7 @@ a {
 
   .deck-orbit-card.is-left,
   .deck-orbit-card.is-right {
-    transform: translate3d(-50%, 8px, 0) scale(0.85);
+    transform: translate3d(-50%, 8px, 0) scale(0.9);
     opacity: 0;
     pointer-events: none;
   }
@@ -668,9 +691,16 @@ a {
 
 @media (max-width: 900px) {
   .mascot-wrap {
-    right: -2%;
-    bottom: 18%;
-    width: 72px;
+    display: none;
+  }
+
+  .mascot-wrap--orbit {
+    display: block;
+    position: absolute;
+    right: 0.35rem;
+    bottom: 4.6rem;
+    width: 64px;
+    z-index: 4;
   }
 }
 
