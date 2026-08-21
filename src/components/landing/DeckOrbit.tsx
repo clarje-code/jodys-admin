@@ -64,7 +64,15 @@ export function DeckOrbit({ decks }: Props) {
             onClick={() => go(index)}
             aria-label={deck.name}
             aria-current={index === active ? "true" : undefined}
-            style={{ background: deck.tone }}
+            style={
+              index === active
+                ? {
+                    background: deck.tone,
+                    borderColor: deck.tone,
+                    boxShadow: `0 22px 44px rgba(0,0,0,0.5), 0 0 0 2px ${deck.tone}`,
+                  }
+                : { background: deck.tone }
+            }
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={deck.cover} alt="" draggable={false} />
@@ -72,6 +80,14 @@ export function DeckOrbit({ decks }: Props) {
         ))}
       </div>
       <div className="deck-orbit-meta">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="deck-orbit-avatar"
+          src="/brand/logo.jpg"
+          alt=""
+          width={56}
+          height={56}
+        />
         <p className="deck-orbit-name" style={{ color: current.tone }}>
           {current.name}
         </p>
