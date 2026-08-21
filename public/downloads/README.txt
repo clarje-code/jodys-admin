@@ -1,7 +1,6 @@
-# APK Android JoDy's
+﻿# APK Android JoDy's
 #
-# Fichier local optionnel: jodys.apk (gitignore � trop lourd pour chaque deploy).
-# En prod, DOWNLOAD_APK_URL pointe vers la GitHub Release:
-#   https://github.com/clarje-code/jodys-admin/releases/download/apk-v1.0.0/jodys.apk
+# Prod: DOWNLOAD_APK_URL → GitHub Release
+#   https://github.com/clarje-code/jodys-admin/releases/download/apk-v1.0.1/jodys.apk
 #
-# Rebuild EAS: jodys-app/scripts/build-and-publish-apk.ps1 puis nouvelle release.
+# Rebuild EAS puis nouvelle release (apk-vX.Y.Z).
